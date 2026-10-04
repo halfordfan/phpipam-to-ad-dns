@@ -10,6 +10,13 @@ Valid values are 0/No (ignore), 1/Yes (sync A and PTR), and A/OnlyA (update A re
 The script creates TXT records for the host so that deletions/changes can be detected and sync'd.
 
 ## Installation
-Copy to domain controller, edit the configuration block, and set up under scheduled tasks for a preferred interval.
+### On your phpipam instance
+1. Create a custom attribute that controls sync.  I used an `enum` type to reflect the values above with a default of `0`.
+2. Configure API access by creating an application with a read-only token.
+
+### On your domain controller.
+1. Copy the script to domain controller.
+2. Edit the configuration block to match values set in phpipam.
+3. Set up under scheduled tasks for a preferred interval.
 
 Generated with Claude Code free.  I can't believe something like this doesn't already exist, but now it does.
