@@ -11,8 +11,9 @@ The script creates TXT records for the host so that deletions/changes can be det
 
 ## Installation
 ### On your phpipam instance
-1. Create a custom attribute that controls sync.  I used an `enum` type to reflect the values above with a default of `0`.
-2. Configure API access by creating an application with a read-only token.
+1. Enable API access to your phpipam instance.
+2. Create an API application ID with a read-only token.
+3. Create a custom attribute that controls sync.  I used an `enum` type to reflect the values above with a default of `0`.
 
 ### On your domain controller.
 1. Copy the script to domain controller.
