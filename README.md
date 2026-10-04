@@ -3,7 +3,7 @@
 ## Overview
 A PowerShell script to create A and PTR records in AD DNS from data in phpipam.
 
-This script is designed to be run on the Windows domain controller/DNS server under a user that has permissions to update DNS records.  The script only acts on addresses that have a custom attribute set.  NOTE: If the custom attribute you create is 'foobar', then use 'custom_foobar' as the attribute name in the script since that's how it will be exposed from the API.
+This script is designed to be run on the Windows domain controller/DNS server under a user that has permissions to update DNS records.  The script only acts on addresses that have a custom attribute set.  
 
 Valid values are 0/No (ignore), 1/Yes (sync A and PTR), and A/OnlyA (update A record only).
 
